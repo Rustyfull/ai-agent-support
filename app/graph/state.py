@@ -1,6 +1,5 @@
 from typing import Annotated, Optional
 from langgraph.graph import  MessagesState
-from langchain_core.messages import BaseMessage
 from operator import  add
 
 class SupportState(MessagesState):
@@ -21,7 +20,7 @@ class SupportState(MessagesState):
 
     # Intent classification
     intent: Optional[str] = None
-    condifence: float = 0.0
+    confidence: float = 0.0
 
     # Human-in-the-lopp
     needs_human:bool = False
